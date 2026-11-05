@@ -16,7 +16,7 @@ const experiences: Experience[] = [
     role: "Senior Database Engineer (Open Source DB Specialist)",
     period: "2026.01 ~ 현재",
     achievements: [
-      "사내 유일 오픈소스 DB 엔지니어로 고객사 6곳(정기 2·비정기 4)의 MySQL·MariaDB·PostgreSQL 점검, 기술지원, 장애 대응 전담",
+      "오픈소스 DB 담당 엔지니어로 고객사 6곳(정기 2·비정기 4)의 MySQL·MariaDB·PostgreSQL 점검, 기술지원, 장애 대응 전담",
       "정기 점검 이행률 100%, 2026년 담당 고객사 Critical 장애 0건",
       "점검 자동화 스크립트 개발: MySQL/MariaDB v3(27종), PostgreSQL v2(28종) — 5개 고객사 DB 37대에 적용",
       "MySQL InnoDB Cluster(Group Replication 3대·Router 2대) 전체 점검, 재기동 지원 및 업그레이드 검토",
