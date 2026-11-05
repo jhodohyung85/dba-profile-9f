@@ -23,7 +23,8 @@ const experiences: Experience[] = [
       "MySQL InnoDB Cluster(Group Replication 3대·Router 2대) 전체 점검, 재기동 지원 및 업그레이드 검토",
       "고객사 PostgreSQL·MongoDB 표준 아키텍처 검수: 의견 6건 전부 반영, PgPool-II + Streaming Replication / Replica Set PSS 표준 확정",
       "Pentaho(PDI) 기반 Oracle 19c → MySQL 이관 검증: US7ASCII 한글 데이터 무손실 이관, 튜닝으로 80만 건 이관 시간 48분 → 2분(약 23배) 단축",
-      "오픈소스 HA 구성 검증 진행 중: ProxySQL + Orchestrator + Keepalived, Patroni + etcd + pgBouncer + HAProxy, Debezium CDC",
+      "오픈소스 HA 구성 검증 진행 중 (각 PMM 모니터링): MySQL + ProxySQL + Keepalived + Orchestrator / PostgreSQL + Patroni + etcd + PgBouncer + HAProxy + Keepalived",
+      "Debezium 기반 CDC 실시간 동기화 테스트 진행 중",
     ],
   },
   {
