@@ -71,12 +71,19 @@ export function ProfileSection() {
                 { label: "MariaDB", color: "mysql" },
                 { label: "PostgreSQL", color: "postgresql" },
                 { label: "AWS RDS", color: "mysql" },
+                { label: "NCP", color: "postgresql" },
                 { label: "Cloud Migration", color: "postgresql" },
-                { label: "Performance Tuning", color: "mysql" },
+                { label: "Heterogeneous Migration", color: "mysql" },
+                { label: "Oracle → Open Source", color: "postgresql" },
                 { label: "HA Architecture", color: "postgresql" },
                 { label: "InnoDB Cluster", color: "mysql" },
-                { label: "Oracle → Open Source", color: "postgresql" },
-                { label: "Query Optimization", color: "mysql" },
+                { label: "Performance Tuning", color: "postgresql" },
+                { label: "Backup & DR", color: "mysql" },
+                { label: "Monitoring (PMM)", color: "postgresql" },
+                { label: "DB Automation", color: "mysql" },
+                { label: "Data Modeling", color: "postgresql" },
+                { label: "DB Security (ISMS)", color: "mysql" },
+                { label: "Healthcare IT", color: "postgresql" },
               ].map((keyword) => (
                 <span
                   key={keyword.label}
