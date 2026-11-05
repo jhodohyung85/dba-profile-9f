@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Geist, Geist_Mono, JetBrains_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
+import { getYearsOfExperience } from '@/lib/career'
 
 const geist = Geist({ 
   subsets: ["latin"],
@@ -20,7 +21,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: '조도형 | Senior DBA Portfolio',
-  description: 'Senior Database Administrator with 14+ years of expertise in MySQL, MariaDB, PostgreSQL, and Cloud Migration',
+  description: `Senior Database Administrator with ${getYearsOfExperience()}+ years of expertise in MySQL, MariaDB, PostgreSQL, and Cloud Migration`,
   generator: 'v0.app',
   icons: {
     icon: [

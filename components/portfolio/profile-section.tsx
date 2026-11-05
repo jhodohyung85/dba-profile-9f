@@ -1,8 +1,10 @@
 "use client"
 
 import { Mail, Phone, MapPin, Hash } from "lucide-react"
+import { getYearsOfExperience } from "@/lib/career"
 
 export function ProfileSection() {
+  const years = getYearsOfExperience()
   return (
     <section className="py-16 px-4 bg-card/30">
       <div className="max-w-6xl mx-auto">
@@ -69,10 +71,19 @@ export function ProfileSection() {
                 { label: "MariaDB", color: "mysql" },
                 { label: "PostgreSQL", color: "postgresql" },
                 { label: "AWS RDS", color: "mysql" },
+                { label: "NCP", color: "postgresql" },
                 { label: "Cloud Migration", color: "postgresql" },
-                { label: "Performance Tuning", color: "mysql" },
+                { label: "Heterogeneous Migration", color: "mysql" },
+                { label: "Oracle → Open Source", color: "postgresql" },
                 { label: "HA Architecture", color: "postgresql" },
-                { label: "Query Optimization", color: "mysql" },
+                { label: "InnoDB Cluster", color: "mysql" },
+                { label: "Performance Tuning", color: "postgresql" },
+                { label: "Backup & DR", color: "mysql" },
+                { label: "Monitoring (PMM)", color: "postgresql" },
+                { label: "DB Automation", color: "mysql" },
+                { label: "Data Modeling", color: "postgresql" },
+                { label: "DB Security (ISMS)", color: "mysql" },
+                { label: "Healthcare IT", color: "postgresql" },
               ].map((keyword) => (
                 <span
                   key={keyword.label}
@@ -89,7 +100,7 @@ export function ProfileSection() {
 
             <div className="mt-6 pt-6 border-t border-border">
               <p className="text-muted-foreground text-sm leading-relaxed">
-                14년 이상의 DBA 경력을 바탕으로 대규모 데이터베이스 운영, 
+                {years}년 이상의 DBA 경력을 바탕으로 대규모 데이터베이스 운영, 
                 클라우드 마이그레이션, 성능 최적화 분야에서 전문성을 발휘하고 있습니다.
               </p>
             </div>
