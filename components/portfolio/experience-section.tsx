@@ -4,6 +4,7 @@ import { Building2, Calendar, ChevronRight } from "lucide-react"
 
 interface Experience {
   company: string
+  file: string
   role: string
   period: string
   duration?: string
@@ -13,6 +14,7 @@ interface Experience {
 const experiences: Experience[] = [
   {
     company: "데이타뱅크",
+    file: "2026_databank.sql",
     role: "Senior Database Engineer (Open Source DB Specialist)",
     period: "2026.01 ~ 현재",
     achievements: [
@@ -28,6 +30,7 @@ const experiences: Experience[] = [
   },
   {
     company: "개인사업자/프리랜서",
+    file: "2022_freelance.sql",
     role: "Senior DBA / Cloud Migration Specialist",
     period: "2022.01 ~ 2025.12",
     duration: "4년",
@@ -42,6 +45,7 @@ const experiences: Experience[] = [
   },
   {
     company: "사람인 DA팀",
+    file: "2012_saramin.sql",
     role: "Senior DBA",
     period: "2012.02 ~ 2021.12",
     duration: "9년 11개월 근속",
@@ -78,7 +82,7 @@ export function ExperienceSection() {
                   <div className="w-3 h-3 rounded-full bg-chart-4/60" />
                 </div>
                 <span className="font-mono text-sm text-muted-foreground ml-2">
-                  experience_{index + 1}.sql
+                  {exp.file}
                 </span>
               </div>
 
