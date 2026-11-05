@@ -19,7 +19,6 @@ const experiences: Experience[] = [
       "사내 유일 오픈소스 DB 엔지니어로 고객사 6곳(정기 2·비정기 4)의 MySQL·MariaDB·PostgreSQL 점검, 기술지원, 장애 대응 전담",
       "정기 점검 이행률 100%, 2026년 담당 고객사 Critical 장애 0건",
       "점검 자동화 스크립트 개발: MySQL/MariaDB v3(27종), PostgreSQL v2(28종) — 5개 고객사 DB 37대에 적용",
-      "그룹웨어 MySQL 야간 긴급 장애 현장 지원: HA 솔루션(Pacemaker) 반복 재기동 원인 규명, 무결성 확인 후 복구, 풀·증분 백업 스크립트 제공",
       "MySQL InnoDB Cluster(Group Replication 3대·Router 2대) 전체 점검, 재기동 지원 및 업그레이드 검토",
       "고객사 PostgreSQL·MongoDB 표준 아키텍처 검수: 의견 6건 전부 반영, PgPool-II + Streaming Replication / Replica Set PSS 표준 확정",
       "Pentaho(PDI) 기반 Oracle 19c → MySQL 이관 검증: US7ASCII 한글 데이터 무손실 이관, 튜닝으로 80만 건 이관 시간 48분 → 2분(약 23배) 단축",
