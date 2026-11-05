@@ -2,17 +2,10 @@
 
 import { useMemo } from "react"
 import { Database, Cloud, Server } from "lucide-react"
-
-function calculateExperience() {
-  const startDate = new Date(2012, 1, 1) // February 2012
-  const now = new Date()
-  const diffTime = Math.abs(now.getTime() - startDate.getTime())
-  const diffYears = diffTime / (1000 * 60 * 60 * 24 * 365.25)
-  return Math.floor(diffYears)
-}
+import { getYearsOfExperience } from "@/lib/career"
 
 export function HeroSection() {
-  const yearsOfExperience = useMemo(() => calculateExperience(), [])
+  const yearsOfExperience = useMemo(() => getYearsOfExperience(), [])
 
   return (
     <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">

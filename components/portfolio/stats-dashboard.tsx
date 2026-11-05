@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef } from "react"
 import { Activity, Zap, Clock, TrendingUp } from "lucide-react"
+import { getYearsOfExperience } from "@/lib/career"
 
 interface StatCardProps {
   icon: React.ReactNode
@@ -110,7 +111,7 @@ export function StatsDashboard() {
           <StatCard
             icon={<TrendingUp className="w-5 h-5" />}
             label="Total Career"
-            value={14}
+            value={getYearsOfExperience()}
             suffix="년+"
             delay={600}
           />

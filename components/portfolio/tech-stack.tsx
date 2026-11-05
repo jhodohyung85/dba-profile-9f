@@ -14,25 +14,25 @@ interface TechSkill {
 
 const techSkills: TechSkill[] = [
   // DBMS
-  { name: "MySQL", level: 98, category: "dbms", tooltip: "MySQL 8.4 기술 검토 및 컴파일 설치 경험", color: "mysql" },
+  { name: "MySQL", level: 98, category: "dbms", tooltip: "MySQL 8.4 기술 검토, InnoDB Cluster 점검·업그레이드 검토", color: "mysql" },
   { name: "MariaDB", level: 95, category: "dbms", tooltip: "엔터프라이즈급 MariaDB 운영 및 최적화", color: "mysql" },
-  { name: "PostgreSQL", level: 90, category: "dbms", tooltip: "PostgreSQL 전용 모니터링 스크립트 구축", color: "postgresql" },
-  { name: "Oracle", level: 85, category: "dbms", tooltip: "OCP/OCA 자격 보유, 대규모 운영 경험", color: "postgresql" },
-  { name: "MongoDB", level: 70, category: "dbms", tooltip: "NoSQL 데이터 모델링 및 운영", color: "mysql" },
+  { name: "PostgreSQL", level: 90, category: "dbms", tooltip: "PostgreSQL 점검 스크립트 v2(28종) 개발, Patroni HA 구성 검증", color: "postgresql" },
+  { name: "Oracle", level: 85, category: "dbms", tooltip: "OCP/OCA 자격 보유, Oracle 19c → MySQL 이관 검증", color: "postgresql" },
+  { name: "MongoDB", level: 70, category: "dbms", tooltip: "NoSQL 운영, Replica Set(PSS) 표준 아키텍처 검수", color: "mysql" },
   // Cloud
   { name: "AWS RDS", level: 92, category: "cloud", tooltip: "AWS 기반 인프라 운영 및 모니터링 자동화", color: "mysql" },
   { name: "AWS EC2", level: 88, category: "cloud", tooltip: "EC2 기반 DB 서버 구축 및 관리", color: "mysql" },
   { name: "NCP CDB", level: 85, category: "cloud", tooltip: "NCP InnoDB Cluster 구축 경험", color: "postgresql" },
   // Tools
   { name: "Python", level: 85, category: "tools", tooltip: "모니터링 자동화 봇 및 스크립트 개발", color: "postgresql" },
-  { name: "Shell Script", level: 92, category: "tools", tooltip: "MySQL/MariaDB 통합 점검 자동화 스크립트", color: "postgresql" },
+  { name: "Shell Script", level: 92, category: "tools", tooltip: "MySQL/MariaDB 점검 자동화 스크립트 v3(27종), DB 37대 적용", color: "postgresql" },
   { name: "Percona Xtrabackup", level: 95, category: "tools", tooltip: "백업/복구 솔루션 비교 검증 및 DR 시나리오", color: "mysql" },
   { name: "PMM", level: 90, category: "tools", tooltip: "Percona Monitoring & Management 환경 구축", color: "postgresql" },
   { name: "Orchestrator", level: 88, category: "tools", tooltip: "HA orchestrator 구축 및 운영", color: "mysql" },
   // Specialty
   { name: "HA Architecture", level: 95, category: "specialty", tooltip: "고가용성 아키텍처 설계 및 구현", color: "postgresql" },
   { name: "Data Migration", level: 98, category: "specialty", tooltip: "9개 국립병원 대규모 데이터 이관 프로젝트", color: "mysql" },
-  { name: "Query Tuning", level: 95, category: "specialty", tooltip: "Query Latency 50% 절감 달성", color: "postgresql" },
+  { name: "Query Tuning", level: 95, category: "specialty", tooltip: "Query Latency 50% 절감, ETL 이관 처리량 277 → 6,299건/s", color: "postgresql" },
 ]
 
 const categories = [
